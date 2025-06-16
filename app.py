@@ -85,7 +85,7 @@ def submit_order():
      })
 
 # a route to list all orders
-# http://localhost:500/orders
+# http://localhost:5000/orders
 @app.route('/orders', methods=['GET'])
 def all_orders():
     result_set = db.session.query(Order).all()
