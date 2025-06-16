@@ -25,7 +25,8 @@
     <div class="container px-5">
       <a class="navbar-brand" href="#page-top">AnimeHub</a>
 
-      <button class="navbar-toggler" type="button" 
+      <button class="navbar-toggler" type="button"
+              onClick="myFunction(this)" 
               data-bs-toggle="collapse" 
               data-bs-target="#navbarResponsive" 
               aria-controls="navbarResponsive" 
@@ -36,7 +37,7 @@
 
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about_us">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#special">Anniversary</a></li>
           <li class="nav-item"><a class="nav-link" href="#order">Order Now</a></li>
           <li class="nav-item"><a class="nav-link" href="#store">Store & Hours</a></li>
           <li class="nav-item"><a class="nav-link" href="#info">Corporate Info</a></li>
@@ -57,7 +58,7 @@
            class="rounded-circle" 
            style="max-width: 200px;">
                     <h1 class="masthead-heading mb-0">AnimeHub</h1>
-                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#order">Order Now</a>
+                    <a class="burst btn btn-primary btn-xl rounded-pill mt-5" href="#order">Order Now</a>
                 </div>
             </div>
             <div class="bg-circle-1 bg-circle"></div>
@@ -68,7 +69,7 @@
 <!-- Header end -->     
   
 <!-- About us section start-->
-<section id="about_us">
+<section id="special">
   <div class="container px-5">
     <div class="row gx-5 align-items-center">
       
@@ -80,8 +81,15 @@
       </div>
       <div class="col-lg-6 order-lg-1">
         <div class="pt-5 pb-5">
-          <h2 class="display-4">Who are we?</h2>
-          <p>We are a Guyana-based anime and comic shop created by fans, for fans. Our goal is to bring exclusive manga, collectibles, and limited-edition comic books to our global community. AnimeHub is your go-to destination for authentic anime experiences.</p>
+          <h2 class="display-4 pb-3">One Year Anniversary!</h2>
+          <p>We are celebrating our one year anniversary and can't wait to share our exlusive deals with you! Here's an overview of what we got in store:</p>
+           <ol>
+               <li class= "pb-2"><strong>Anniversary Comic Book: </strong>A limited edition comic book</li>
+               <li class= "pb-2"><strong>Comic Book Package: </strong>Multiple Comic Books</li>  
+               <li class= "pb-2"><strong>Anniversary Anime Package: </strong>Japanese comic book</li>  
+               <li class= "pb-2"><strong>Deluxe Package: </strong>A selection of limited print comic books</li>  
+               <li class= "pb-2"><strong>Mystery Package: </strong>A selection of comic books and a T-shirt</li>   
+            </ol> 
         </div>
       </div>
     </div>
@@ -129,7 +137,7 @@
               <option value="Mystery Package">Mystery Package</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-primary mt-2"><strong>Submit</strong></button>
+          <button type="submit" class="burst-button btn btn-primary mt-2"><strong>Submit</strong></button>
         </form>
       </div>
     </div>
@@ -242,6 +250,6 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="{{ url_for('static', filename='scripts.js') }}"></script>
     </body>
 </html>
